@@ -1,0 +1,8 @@
+/target/
+/RemoteSystemsTempFiles/
+.classpath
+.project
+.DS_Store
+.settings
+META-INF
+.metadata

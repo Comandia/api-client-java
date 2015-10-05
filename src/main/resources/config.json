@@ -1,0 +1,6 @@
+{
+	"apiBaseUri":							"http://api.mycomandia.int/v1/",
+	"defaultAccessToken" :					"dfa1eea81cd5953a8871f5e0b1cf5740",
+	"isDebugModeActive":					false
+	
+}
