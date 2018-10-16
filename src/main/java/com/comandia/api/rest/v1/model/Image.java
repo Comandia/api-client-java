@@ -5,6 +5,7 @@ import java.util.Date;
 public class Image {
 	Integer resourceid;
 	boolean isdefault;
+	private Integer sortorder;
 	String fullsizeurl;
 	String thumbnailsizeurl;
 	Integer filesize;
@@ -46,7 +47,12 @@ public class Image {
 	public void setDatecreated(Date datecreated) {
 		this.datecreated = datecreated;
 	}
-	
+	public Integer getSortorder() {
+		return sortorder;
+	}
+	public void setSortorder(Integer sortorder) {
+		this.sortorder = sortorder;
+	}
 	
 
 }

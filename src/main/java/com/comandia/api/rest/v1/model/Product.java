@@ -3,6 +3,9 @@ package com.comandia.api.rest.v1.model;
 import java.util.Date;
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+
 import com.comandia.apiclient.endpoint.Endpoint;
 
 @Endpoint(target="products")
@@ -19,6 +22,7 @@ public class Product {
 	public String shippingtypecode;
 	public String sku;
 	public String barcode;
+	public String manufactureritemcode;
 	public boolean isactive;
 	public boolean iseol;
 	public boolean isinventorytracked;
@@ -30,6 +34,7 @@ public class Product {
 	private List<ProductStock> stocks;
 	private List<ProductInventory> productinventories;
 	private List<Image> resources;
+	private List<Category> additionalcategories;
 	
 	public static Product build(){
 		return new Product();
@@ -92,6 +97,12 @@ public class Product {
 	}
 	public void setBarcode(String barcode) {
 		this.barcode = barcode;
+	}
+	public String getManufactureritemcode() {
+		return manufactureritemcode;
+	}
+	public void setManufactureritemcode(String manufactureritemcode) {
+		this.manufactureritemcode = manufactureritemcode;
 	}
 	public boolean isIsactive() {
 		return isactive;
@@ -206,6 +217,14 @@ public class Product {
 
 	public void setProductinventories(List<ProductInventory> productinventories) {
 		this.productinventories = productinventories;
+	}
+
+	public List<Category> getAdditionalcategories() {
+		return additionalcategories;
+	}
+
+	public void setAdditionalcategories(List<Category> additionalcategories) {
+		this.additionalcategories = additionalcategories;
 	}
 
 }

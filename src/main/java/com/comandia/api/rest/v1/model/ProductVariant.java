@@ -9,6 +9,7 @@ public class ProductVariant {
 	String color;
 	String sku;
 	String barcode;
+	Float price;
 	boolean isactive;
 	Date datecreated;
 	
@@ -59,6 +60,12 @@ public class ProductVariant {
 	}
 	public void setDatecreated(Date datecreated) {
 		this.datecreated = datecreated;
+	}
+	public Float getPrice() {
+		return price;
+	}
+	public void setPrice(Float price) {
+		this.price = price;
 	}
 	
 	

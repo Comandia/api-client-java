@@ -13,7 +13,7 @@ import junit.framework.TestCase;
 
 public class ApiClientTest extends TestCase {
 	
-	public static final String TEST_ACCESS_TOKEN = "dfa1eea81cd5953a8871f5e0b1cf5740";
+	public static final String TEST_ACCESS_TOKEN = "a3817baf92b4ce7dfaf67620c712bff6";
 	
 	public void testPostProduct() {
 		APIClient client = new APIClient();
